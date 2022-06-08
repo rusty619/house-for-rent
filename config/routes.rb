@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :reservations
   resources :homes
   resources :reviews
+  resources :images
 end
