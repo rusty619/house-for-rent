@@ -26,7 +26,7 @@ class ReservationsController < ApplicationController
     private 
 
     def reservation_params 
-        params.permit(:name)
+        params.permit(:user_id, :home_id, :start_date, :end_date, :price)
     end
 
     def render_unprocessable_entity_response(exception) 
@@ -34,7 +34,7 @@ class ReservationsController < ApplicationController
     end
 
     def render_not_found_response 
-        render json: {error: "User Not Found"}, status: :not_found
+        render json: {error: "Reservation Not Found"}, status: :not_found
     end
 
 end
