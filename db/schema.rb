@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_09_143324) do
+ActiveRecord::Schema.define(version: 2022_06_09_200113) do
 
   create_table "homes", force: :cascade do |t|
     t.string "home_type"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2022_06_09_143324) do
     t.boolean "has_air_con"
     t.boolean "has_internet"
     t.integer "price"
-    t.integer "user_id"
+    t.integer "owner_id"
     t.float "latitude"
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
