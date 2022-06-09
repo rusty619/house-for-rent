@@ -26,7 +26,7 @@ class HomesController < ApplicationController
     private 
 
     def home_params 
-        params.permit(:home_type, :total_occupancy, :total_bedrooms, :total_bathrooms, :summary, :address, :has_tv, :has_kitchen, :has_air_con, :has_heating, :has_internet, :price, :user_id, :latitude, :longitude)
+        params.permit(:home_type, :total_occupancy, :total_bedrooms, :total_bathrooms, :summary, :address, :has_tv, :has_kitchen, :has_air_con, :has_heating, :has_internet, :price, :user_id, :latitude, :longitude, :title)
     end
 
     def render_unprocessable_entity_response(exception) 

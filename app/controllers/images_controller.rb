@@ -26,7 +26,7 @@ class ImagesController < ApplicationController
     private 
 
     def review_params 
-        params.permit(:home_id, :home_type, :img)
+        params.permit(:home_id, :room_type, :img)
     end
 
     def render_unprocessable_entity_response(exception) 
