@@ -3,6 +3,10 @@
   /*background-color: #FFE6E6;*/
 }
 
+a:-webkit-any-link{
+  text-decoration: none;
+}
+
 .home-container{
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -45,4 +49,29 @@
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+}
+
+.nav-menu{
+  margin-left: 10px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.nav-home{
+
+  right: 30px;
+  display: flex;
+  height: 60px;
+}
+
+.nav-fake-business{
+  position: relative;
+  top: 15px;
+  left: 18px;
+  color: #0000FE;
+  font-family: verdana;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
 }
