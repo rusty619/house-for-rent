@@ -2,7 +2,7 @@ import HomeCard from "./HomeCard"
 
 function HomeContainer({homeData}){
     return(
-    <div>
+    <div className="home-container">
         {
             homeData.map((home) => {
                 return(
