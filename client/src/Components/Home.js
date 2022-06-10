@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from "react"
 import HomeContainer from "./HomeContainer";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const [homeData, setHomeData] = useState([])
@@ -18,6 +19,7 @@ const Home = () => {
 
     return(
     <div>
+      <Navbar/>
        <HomeContainer homeData={homeData}/>
     </div>)
 }
