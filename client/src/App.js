@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import React from "react"
+import React,{useState, useEffect} from "react"
+import HomeContainer from "./Components/HomeContainer";
 import './App.css';
 
 function App() {
+
+  const [homeData, setHomeData] = useState([])
+
+  const request = async () => {
+      let req = await fetch('/homes') 
+      let res = await req.json()
+      setHomeData(res)
+  }
+
+  useEffect(()=>{
+    request()
+  },[])
+
+  console.log(homeData)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HomeContainer homeData={homeData}/>
     </div>
   );
 }
