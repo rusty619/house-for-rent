@@ -1,4 +1,5 @@
 import HomeCard from "./HomeCard"
+import React from 'react'
 
 function HomeContainer({homeData}){
     return(
