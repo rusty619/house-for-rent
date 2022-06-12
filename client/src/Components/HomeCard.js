@@ -1,7 +1,7 @@
 import React from "react"
 
 const HomeCard = ({home}) =>{
-    const {title, price,images} = home
+    const {title, price,images,id} = home
 
     return(
     <div className="home-item">
