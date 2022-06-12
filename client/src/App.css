@@ -15,8 +15,8 @@ a:-webkit-any-link{
   padding-right: 25px;
   padding-bottom: 20px;
   margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .home-item{
@@ -24,6 +24,7 @@ a:-webkit-any-link{
   padding-bottom: 10px;
   background-color: white;
   text-align: left;
+  margin-left: 40px;
 }
 
 .home-img{
@@ -54,11 +55,9 @@ a:-webkit-any-link{
 .nav-menu{
   margin-left: 10px;
   text-align: left;
-  text-decoration: none;
 }
 
 .nav-home{
-
   right: 30px;
   display: flex;
   height: 60px;
