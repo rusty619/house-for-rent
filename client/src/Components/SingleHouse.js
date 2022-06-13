@@ -1,6 +1,7 @@
 import { ref } from "joi"
 import React,{useState, useEffect} from "react"
 import {useParams} from "react-router-dom"
+import ExtraInformation from "./ExtraInformation"
 
 const SingleHouse = () => {
     const {id} = useParams()
@@ -45,6 +46,7 @@ const SingleHouse = () => {
             <p className="house-amount-of-value">{total_bedrooms} bedrooms </p>
             <p className="house-amount-of-value">{total_bathrooms} baths </p>
         </div>
+        <ExtraInformation />
     </div>)
 }
 

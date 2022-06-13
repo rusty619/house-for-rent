@@ -138,3 +138,93 @@ a:-webkit-any-link{
   margin-left: 5px;
   font-family: 'Charis SIL', serif;
 }
+
+/* .extra-information{
+  margin: 30px;
+  border: 2px solid #D0C9C0;
+} */
+
+.extra-information-self{
+  display: flex;
+  position: absolute;
+  left: 300px;
+  font-size: 20px;
+}
+
+.extra-information-self-check{
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  position: relative;
+  left: 25px;
+  bottom: 25px;
+}
+
+.extra-information-self-desc{
+  font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: rgb(113, 113, 113) !important;
+  position: relative;
+  right: 100px;
+  top: 15px;
+}
+
+.extra-information-host{
+  display: flex;
+  position: relative;
+  left: 268px;
+  top: 90px;
+  font-size: 20px;
+}
+
+.extra-information-host-superhost{
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  position: relative;
+  left: 25px;
+  bottom: 25px;
+}
+
+.extra-infomration-host-desc{
+  font-family: Circular,
+      -apple-system,
+      BlinkMacSystemFont,
+      Roboto,
+      "Helvetica Neue",
+      sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: rgb(113, 113, 113) !important;
+  position: relative;
+  right: 206px;
+  top: 15px;
+}
+
+.extra-information-cancellation{
+  display: flex;
+  position: relative;
+  left: 268px;
+  top: 120px;
+  font-size: 20px;
+}
+
+.extra-information-cancellation-desc{
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  position: relative;
+  left: 25px;
+  bottom: 20px;
+}
