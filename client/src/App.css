@@ -139,10 +139,10 @@ a:-webkit-any-link{
   font-family: 'Charis SIL', serif;
 }
 
-/* .extra-information{
+.extra-information{
   margin: 30px;
-  border: 2px solid #D0C9C0;
-} */
+  /* border: 2px solid #D0C9C0; */
+} 
 
 .extra-information-self{
   display: flex;
