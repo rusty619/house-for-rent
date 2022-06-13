@@ -141,13 +141,16 @@ a:-webkit-any-link{
 
 .extra-information{
   margin: 30px;
-  /* border: 2px solid #D0C9C0; */
+  padding-bottom: 39px;
+  margin-left: 320px;
+  margin-right: 680px;
+  border-bottom: 2px solid #D0C9C0;
 } 
 
 .extra-information-self{
   display: flex;
-  position: absolute;
-  left: 300px;
+  position: relative;
+  left: 0;
   font-size: 20px;
 }
 
@@ -180,8 +183,8 @@ a:-webkit-any-link{
 .extra-information-host{
   display: flex;
   position: relative;
-  left: 268px;
-  top: 90px;
+  left: 0px;
+  top: 30px;
   font-size: 20px;
 }
 
@@ -214,8 +217,8 @@ a:-webkit-any-link{
 .extra-information-cancellation{
   display: flex;
   position: relative;
-  left: 268px;
-  top: 120px;
+  left: 0px;
+  top: 60px;
   font-size: 20px;
 }
 
