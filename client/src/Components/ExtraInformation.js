@@ -11,7 +11,7 @@ const ExtraInformation = () => {
         <div className="extra-information-host">
             <i class="fa-solid fa-medal"></i>
             <p className="extra-information-host-superhost">Owner is a is a Superhost</p>
-            <p className="extra-infomration-host-desc">Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p>
+            <p className="extra-infomration-host-desc">Highly rated hosts who are committed to providing great stays for guests.</p>
         </div>
         <div className="extra-information-cancellation">
             <i class="fa-solid fa-calendar"></i>

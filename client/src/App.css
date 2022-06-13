@@ -141,7 +141,7 @@ a:-webkit-any-link{
 
 .extra-information{
   margin: 30px;
-  padding-bottom: 39px;
+  padding-bottom: 52px;
   margin-left: 320px;
   margin-right: 680px;
   border-bottom: 2px solid #D0C9C0;
@@ -193,12 +193,13 @@ a:-webkit-any-link{
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   font-weight: 600 !important;
   line-height: 20px !important;
-  position: relative;
-  left: 25px;
-  bottom: 25px;
+  position: absolute;
+  left: 43px;
+  top: -40px;
 }
 
 .extra-infomration-host-desc{
+  display: inline;
   font-family: Circular,
       -apple-system,
       BlinkMacSystemFont,
@@ -207,18 +208,20 @@ a:-webkit-any-link{
       sans-serif !important;
   font-weight: 400 !important;
   font-size: 16px !important;
-  line-height: 20px !important;
+  /* line-height: 20px !important; */
   color: rgb(113, 113, 113) !important;
-  position: relative;
-  right: 206px;
-  top: 15px;
+  position: absolute;
+  left: 45px;
+  top: -10px;
+  padding-right: 0px;
+  text-align: left;
 }
 
 .extra-information-cancellation{
   display: flex;
   position: relative;
   left: 0px;
-  top: 60px;
+  top: 70px;
   font-size: 20px;
 }
 
