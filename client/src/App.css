@@ -96,32 +96,10 @@ a:-webkit-any-link{
   height: 300px;
   width: 540px;
   padding: 0 0.25rem;
+  filter: brightness(110%);
 }
 
-@keyframes move {
-  0% {
-      margin-left: 0px;
-    }
-  
-    50% {
-      margin-left: -100px;
-    }
-  
-    100% {
-      margin-left: -200px;
-    }
+.single-house-img:hover{
+  filter: brightness(90%);
+  transition: all 1s ease;
 }
-
-/* .single-house-img > div{
-  scroll-snap-align: start;
-  flex-flow: nowrap !important;
-}
-
-.single-house-img img{
-  width: 540px;
-  object-fit: contain;
-}
-
-.single-house-img::-scrollbar {
-  display: none;
-} */
