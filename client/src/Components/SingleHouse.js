@@ -1,3 +1,4 @@
+import { ref } from "joi"
 import React,{useState, useEffect} from "react"
 import {useParams} from "react-router-dom"
 
@@ -6,6 +7,7 @@ const SingleHouse = () => {
     console.log(id)
 
     const [homeData,setHomeData] = useState([])
+
 
     const request = async () => {
         let req = await fetch(`/homes/${id}`)
@@ -17,19 +19,22 @@ const SingleHouse = () => {
         request()
     },[])  
 
+
     console.log(homeData)
     console.log(homeData.images && homeData.images.length)
-    let len = homeData.images && homeData.images.length
-    console.log("Length is ",len)
+
+    
+
     return(
     <div>
         id: {id}
         <p>{homeData.title}</p>
-        <div className="single-house-img">
+        <div className="single-house-container-img">
+            <div className="thumbnails"></div>    
         {
             homeData.images && homeData.images.map((image) => {
                 return(
-                    <img src={image.img} />
+                    <div><img src={image.img} className="single-house-img"/></div>
                 )
             })
         }
