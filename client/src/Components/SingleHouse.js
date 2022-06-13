@@ -23,12 +23,12 @@ const SingleHouse = () => {
     console.log(homeData)
     console.log(homeData.images && homeData.images.length)
 
-    
+    const {total_occupancy, total_bedrooms, total_bathrooms} = homeData
 
     return(
     <div>
-        id: {id}
-        <p>{homeData.title}</p>
+        {/* id: {id} */}
+        <h1 className="single-house-title">{homeData.title}</h1>
         <div className="single-house-container-img">
             <div className="thumbnails"></div>    
         {
@@ -38,6 +38,12 @@ const SingleHouse = () => {
                 )
             })
         }
+        </div>
+        <p className="entire-house">Entire House</p>
+        <div className="house-amount-of">
+            <p className="house-amount-of-value">{total_occupancy} guests </p>
+            <p className="house-amount-of-value">{total_bedrooms} bedrooms </p>
+            <p className="house-amount-of-value">{total_bathrooms} baths </p>
         </div>
     </div>)
 }

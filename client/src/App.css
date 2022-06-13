@@ -80,7 +80,8 @@ a:-webkit-any-link{
 
 .single-house-container-img{
   display: flex;
-  margin: 30px; 
+  margin-left: 300px; 
+  margin-right: 300px;
   padding: 20px;
   /* border: 3px solid #EEE;
   border-radius: 30px; */
@@ -97,9 +98,43 @@ a:-webkit-any-link{
   width: 540px;
   padding: 0 0.25rem;
   filter: brightness(110%);
+  margin-top: 100px;
 }
 
 .single-house-img:hover{
   filter: brightness(90%);
   transition: all 1s ease;
+}
+
+.single-house-title{
+  font-family: 'Charis SIL', serif;
+  margin-left: 324px;
+  margin-right: 324px;
+  /* border: 2px solid black; */
+  position: absolute;
+  left: 0;
+}
+
+.entire-house{
+  margin-left: 300px;
+  font-family: 'Charis SIL', serif;
+  /*margin-right: 1000px; */
+  /* border: 2px solid black; */
+  position: absolute;
+  left: 23px;
+  top: 476px;
+}
+
+.house-amount-of{
+  display: flex;
+  /* margin-left: 310px;*/
+  margin-right: 1000px; 
+  border-bottom: 2px solid #D0C9C0;
+  position: relative;
+  left: 317px;
+}
+
+.house-amount-of-value{
+  margin-left: 5px;
+  font-family: 'Charis SIL', serif;
 }
