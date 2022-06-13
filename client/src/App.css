@@ -81,7 +81,9 @@ a:-webkit-any-link{
 .single-house-container-img{
   display: flex;
   margin: 30px; 
-  border: 1px solid #EEE;
+  padding: 20px;
+  /* border: 3px solid #EEE;
+  border-radius: 30px; */
   overflow: scroll;
 }
 
@@ -94,7 +96,6 @@ a:-webkit-any-link{
   height: 300px;
   width: 540px;
   padding: 0 0.25rem;
-  border-radius: 5px;
 }
 
 @keyframes move {
