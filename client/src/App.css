@@ -116,6 +116,7 @@ a:-webkit-any-link{
 }
 
 .entire-house{
+  margin-top: 20px;
   margin-left: 300px;
   font-family: 'Charis SIL', serif;
   /*margin-right: 1000px; */
@@ -233,4 +234,31 @@ a:-webkit-any-link{
   position: relative;
   left: 25px;
   bottom: 20px;
+}
+
+.blue-cover{
+  /* border: 3px solid blue; */
+  margin-left: 320px;
+  margin-right: 680px;
+  padding-bottom: 150px;
+  border-bottom: 2px solid #D0C9C0;
+} 
+
+.blue-cover-flex{
+  display: flex;
+}
+
+.blue-cover-img{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 310px;
+}
+
+.blue-cover-desc{
+  font-size: 16px;
+  display: inline;
+  position: absolute;
+  top: 910px;
+  left: 320px;
 }
