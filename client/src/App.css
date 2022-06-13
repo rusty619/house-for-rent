@@ -17,6 +17,7 @@ a:-webkit-any-link{
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 30px;
 }
 
 .home-item{
@@ -25,6 +26,7 @@ a:-webkit-any-link{
   background-color: white;
   text-align: left;
   margin-left: 40px;
+  padding-bottom: 20px;
 }
 
 .home-img{
