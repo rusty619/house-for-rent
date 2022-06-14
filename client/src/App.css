@@ -263,3 +263,12 @@ a:-webkit-any-link{
   top: 910px;
   left: 320px;
 }
+
+.single-page-desc{
+  text-align: left;
+  margin-top: 20px;
+  margin-right: 700px;
+  margin-left: 320px;
+  font-family: 'Charis SIL', serif;
+  font-size: 16px;
+}

@@ -2,6 +2,7 @@ import { ref } from "joi"
 import React,{useState, useEffect} from "react"
 import {useParams} from "react-router-dom"
 import ExtraInformation from "./ExtraInformation"
+import SinglePageDesc from "./SinglePageDesc"
 
 const SingleHouse = () => {
     const {id} = useParams()
@@ -21,8 +22,8 @@ const SingleHouse = () => {
     },[])  
 
 
-    console.log(homeData)
-    console.log(homeData.images && homeData.images.length)
+    // console.log(homeData)
+    // console.log(homeData.images && homeData.images.length)
 
     const {total_occupancy, total_bedrooms, total_bathrooms} = homeData
 
@@ -51,7 +52,7 @@ const SingleHouse = () => {
             <img src="https://play-lh.googleusercontent.com/sMkxKt0zPs00TX0E9OZFxcI5GIkZKtjFnLbr1HdaA3w80U2djUB8yu7MeWXEvIp5ruE" className="blue-cover-img"/>
             <p className="blue-cover-desc">Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like trouble checking in</p>
         </div>
-        <div className=""></div>
+        <SinglePageDesc key={homeData.id} homeData={homeData}/>
     </div>)
 }
 
