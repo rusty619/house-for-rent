@@ -271,4 +271,126 @@ a:-webkit-any-link{
   margin-left: 320px;
   font-family: 'Charis SIL', serif;
   font-size: 16px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #D0C9C0;
+}
+
+.stuff-available{
+  margin-top: 20px;
+  margin-right: 700px;
+  margin-left: 320px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #D0C9C0;
+  height: 250px; 
+}
+
+.stuff-available-place{
+  text-align: left;
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  font-size: 20px;
+}
+
+.stuff-available-wifi{
+  display: flex;
+}
+
+.fa-wifi{
+  font-size: 20px;
+}
+
+.stuff-avilable-wifi-text{
+  position: relative;
+  bottom: 25px;
+  left: 10px;
+  font-family: 'Charis SIL', serif;
+  font-size: 20px;
+}
+
+.stuff-avilable-wifi-text-boolean{
+  position: relative;
+  bottom: 25px;
+  left: 15px;
+  font-family: 'Charis SIL', serif;
+  font-size: 20px;
+}
+
+.stuff-available-tv{
+  display: flex;
+}
+
+.fa-tv{
+  font-size: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+.stuff-avilable-tv-text{
+  position: relative;
+  font-family: 'Charis SIL', serif;
+  bottom: 45px;
+  left: 10px;
+  font-size: 20px;
+}
+
+.stuff-avilable-tv-text-boolean{
+  position: relative;
+  font-family: 'Charis SIL', serif;
+  bottom: 45px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.stuff-available-kitchen{
+  display: flex;
+}
+
+.fa-kitchen-set{
+  font-size: 20px;
+  position: relative;
+  bottom: 40px;
+}
+
+.stuff-avilable-kitchen-text{
+  font-family: 'Charis SIL', serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 65px;
+  left: 12px;
+}
+
+.stuff-avilable-kitchen-text-boolean{
+  font-family: 'Charis SIL', serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 65px;
+  left: 20px;
+}
+
+.stuff-available-ac{
+  display: flex;
+}
+
+.fa-snowflake{
+  font-size: 20px;
+  position: relative;
+  bottom: 60px; 
+}
+
+.stuff-available-ac-text{
+  font-family: 'Charis SIL', serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 85px;
+  left: 15px;
+}
+
+.stuff-available-ac-text-boolean{
+  font-family: 'Charis SIL', serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 85px;
+  left: 20px;
 }
