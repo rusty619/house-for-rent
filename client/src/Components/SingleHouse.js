@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom"
 import ExtraInformation from "./ExtraInformation"
 import SinglePageDesc from "./SinglePageDesc"
 import StuffAvilable from "./StuffAvailable"
+import SleepArea from "./SleepArea"
 
 const SingleHouse = () => {
     const {id} = useParams()
@@ -54,6 +55,7 @@ const SingleHouse = () => {
             <p className="blue-cover-desc">Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like trouble checking in</p>
         </div>
         <SinglePageDesc key={homeData.id} homeData={homeData}/>
+        <SleepArea key={homeData.id} homeData={homeData}/>
         <StuffAvilable key={homeData.id} homeData={homeData}/>
     </div>)
 }
