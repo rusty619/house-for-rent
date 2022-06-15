@@ -573,3 +573,19 @@ input[type="date"]:focus:before {
 .reserve-box-display-total-price-right{
   margin-left: auto;
 }
+
+.things-to-know{
+  border-top: 2px solid #D0C9C0;
+  margin: 20px;
+  margin-left: 310px;
+  margin-right: 670px;
+}
+
+.things-to-know-title{
+  text-align: left;
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  font-size: 20px;
+}

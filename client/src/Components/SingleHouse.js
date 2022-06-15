@@ -6,6 +6,7 @@ import SinglePageDesc from "./SinglePageDesc"
 import StuffAvilable from "./StuffAvailable"
 import SleepArea from "./SleepArea"
 import ReserveBox from "./ReserveBox"
+import ThingsToKnow from "./ThingsToKnow"
 
 const SingleHouse = () => {
     const {id} = useParams()
@@ -59,6 +60,7 @@ const SingleHouse = () => {
         <SleepArea key={homeData.id} homeData={homeData}/>
         <StuffAvilable key={homeData.id} homeData={homeData}/>
         <ReserveBox homeData={homeData}/>
+        <ThingsToKnow />
     </div>)
 }
 
