@@ -5,6 +5,7 @@ import ExtraInformation from "./ExtraInformation"
 import SinglePageDesc from "./SinglePageDesc"
 import StuffAvilable from "./StuffAvailable"
 import SleepArea from "./SleepArea"
+import ReserveBox from "./ReserveBox"
 
 const SingleHouse = () => {
     const {id} = useParams()
@@ -57,6 +58,7 @@ const SingleHouse = () => {
         <SinglePageDesc key={homeData.id} homeData={homeData}/>
         <SleepArea key={homeData.id} homeData={homeData}/>
         <StuffAvilable key={homeData.id} homeData={homeData}/>
+        <ReserveBox homeData={homeData}/>
     </div>)
 }
 

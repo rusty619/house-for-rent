@@ -435,3 +435,141 @@ a:-webkit-any-link{
   position: relative;
   left: 0;
 }
+
+.reserve-border{
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 10px;
+  display: block;
+  margin-left: 320px;
+  width: 540px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 10px 10px 10px 10px rgb(167, 167, 167);
+}
+
+.reserve-box{
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.reserve-box-price{
+  text-align: left;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  font-size: 20px;
+  margin-bottom: 30px; 
+}
+
+input[type=date] {
+  text-align: left;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  font-size: 13px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 50px;
+  width: 200px;
+}
+
+input[type="date"]:before {
+  color: black;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+
+input[type="date"]:before {
+  color: black;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before {
+  content: attr(placeholder) !important;
+}
+
+.reserve-box-date{
+  display: flex;
+  margin-top: 10px;
+}
+
+.reserve-box-date-checkin{
+  display: grid;
+  border: 1px solid rgb(167, 167, 167);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.reserve-box-date-checkout{
+  display: grid;
+  border: 1px solid rgb(167, 167, 167);
+  padding-right: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.reserve-box-btn{
+  border: none;
+  margin-top: 20px;
+  width: 520px;
+  height: 50px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  font-size: 20px;
+  border-radius: 10px;
+  background: rgb(100, 111, 212);
+  background: linear-gradient(0deg, rgba(100, 111, 212, 1) 0%, rgba(45, 142, 253, 1) 100%);
+  color: white;
+  transition: 2s;
+}
+
+.reserve-box-btn:hover{
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.reserve-box-display-prices{
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800 !important;
+  line-height: 20px !important;
+  font-size: 18px;
+  margin-right: 2px;
+  border-bottom: 2px solid #D0C9C0;
+}
+
+.reserve-box-display-prices-row{
+  display: flex;
+}
+
+.reserve-box-display-prices-left{
+  color: #0000FE;
+  text-decoration: underline;
+}
+
+.reserve-box-display-prices-right{
+  margin-left: auto;
+}
+
+.reserve-box-display-total-price{
+  margin-top: 20px;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800 !important;
+  line-height: 20px !important;
+  font-size: 18px;
+}
+
+/* .reserve-box-display-total-price-left{} */
+
+.reserve-box-display-total-price-right{
+  margin-left: auto;
+}
