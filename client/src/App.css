@@ -252,13 +252,13 @@ a:-webkit-any-link{
   height: 100px;
   width: 100px;
   position: absolute;
-  left: 310px;
+  left: 312px;
 }
 
 .blue-cover-desc{
   text-align: left;
   position: relative;
-  top: 100px;
+  top: 105px;
   right: 100px;
   margin-left: 100px;
   font-family: 'Charis SIL', serif;
