@@ -3,6 +3,7 @@ import {BrowserRoutes, Route, Router, Switch} from "react-router-dom"
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import SingleHouse from "./Components/SingleHouse";
+import Footer from "./Components/Footer";
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <SingleHouse />
         </Route>
       </Switch>
-     
+
     </div>
   );
 }

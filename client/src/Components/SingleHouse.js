@@ -25,6 +25,10 @@ const SingleHouse = () => {
         request()
     },[])  
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     // console.log(homeData)
     // console.log(homeData.images && homeData.images.length)
