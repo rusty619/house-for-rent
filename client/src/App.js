@@ -19,7 +19,7 @@ function App() {
           <SingleHouse />
         </Route>
       </Switch>
-
+      <Footer />
     </div>
   );
 }

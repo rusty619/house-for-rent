@@ -552,7 +552,6 @@ input[type="date"]:focus:before {
 
 .reserve-box-display-prices-left{
   color: #0000FE;
-  text-decoration: underline;
 }
 
 .reserve-box-display-prices-right{
@@ -625,4 +624,74 @@ input[type="date"]:focus:before {
 
 .things-to-know-second-column{
   margin-left: 30px;
+}
+
+.footer{
+  border-top: 2px solid #D0C9C0;
+  display: flex;
+  padding-bottom: 20px;
+  background-color: rgb(246,246,246);
+  font-family: inherit !important;
+}
+
+.footer-left{
+  font-size: 20px;
+  line-height: 18px;
+  display: flex;
+  margin-left: 100px;
+}
+
+.footer-left-copyright{
+  justify-content: space-between;
+}
+
+.footer-left-text{
+  margin-left: 10px;
+}
+
+.footer-right{
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 600 !important;
+  display: flex;
+  margin-left: auto;
+  padding-right: 50px; 
+}
+
+.fa-globe{
+  display: flex;
+  position: relative;
+  top: 18px;
+}
+
+.footer-right-text{
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.fa-facebook-f{
+  display: flex;
+  position: relative;
+  top: 17px;
+  margin-left: 40px;
+  margin-right: 5px;
+  color: black;
+}
+
+.fa-twitter{
+  display: flex;
+  position: relative;
+  top: 17px;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: black;
+}
+
+.fa-instagram{
+  display: flex;
+  position: relative;
+  top: 17px;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: black;
 }
