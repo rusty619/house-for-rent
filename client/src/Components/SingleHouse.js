@@ -13,6 +13,8 @@ const SingleHouse = () => {
     console.log(id)
 
     const [homeData,setHomeData] = useState([])
+    const [owner,setOwner] = useState([])
+    const {total_occupancy, total_bedrooms, total_bathrooms,owner_id} = homeData
 
 
     const request = async () => {
@@ -33,7 +35,19 @@ const SingleHouse = () => {
     // console.log(homeData)
     // console.log(homeData.images && homeData.images.length)
 
-    const {total_occupancy, total_bedrooms, total_bathrooms} = homeData
+
+    const requestForOwner = async () =>{
+        let req = await fetch(`/users/`)
+        let res = await req.json()
+        setOwner(res)
+    }
+
+    useEffect(() => {
+        requestForOwner()
+    },[])
+
+    console.log("Owner id: ",owner_id)
+    console.log("Owner is",owner[owner_id-1])
 
     return(
     <div>
@@ -49,11 +63,15 @@ const SingleHouse = () => {
             })
         }
         </div>
-        <p className="entire-house">Entire House</p>
+        <div className="intro-to-house">
+            <p className="entire-house">Entire House hosted by {owner[owner_id-1] && owner[owner_id-1].name}</p>
+            
+        </div>
         <div className="house-amount-of">
             <p className="house-amount-of-value">{total_occupancy} guests </p>
             <p className="house-amount-of-value">{total_bedrooms} bedrooms </p>
             <p className="house-amount-of-value">{total_bathrooms} baths </p>
+            <img src= {owner[owner_id-1] && owner[owner_id-1].profile_img} className="profile-img"/>
         </div>
         <ExtraInformation />
         <div className="blue-cover">

@@ -695,3 +695,15 @@ input[type="date"]:focus:before {
   margin-right: 5px;
   color: black;
 }
+
+/* .intro-to-house{
+  display: flex;
+} */
+
+.profile-img{
+  margin-left: auto;
+  position: relative;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem; 
+}
