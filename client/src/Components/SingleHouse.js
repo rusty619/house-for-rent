@@ -75,7 +75,7 @@ const SingleHouse = () => {
         </div>
         <ExtraInformation />
         <div className="blue-cover">
-            <img src="https://play-lh.googleusercontent.com/sMkxKt0zPs00TX0E9OZFxcI5GIkZKtjFnLbr1HdaA3w80U2djUB8yu7MeWXEvIp5ruE" className="blue-cover-img"/>
+                <img src="https://play-lh.googleusercontent.com/sMkxKt0zPs00TX0E9OZFxcI5GIkZKtjFnLbr1HdaA3w80U2djUB8yu7MeWXEvIp5ruE" className="blue-cover-img"/>
             <p className="blue-cover-desc">Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like trouble checking in</p>
         </div>
         <SinglePageDesc key={homeData.id} homeData={homeData}/>
