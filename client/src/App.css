@@ -630,7 +630,7 @@ input[type="date"]:focus:before {
   border-top: 2px solid #D0C9C0;
   display: flex;
   padding-bottom: 20px;
-  background-color: rgb(246,246,246);
+  background-color: #D0C9C0;
   font-family: inherit !important;
 }
 
