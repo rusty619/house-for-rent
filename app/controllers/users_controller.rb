@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     private 
 
     def user_params 
-        params.permit(:name)
+        params.permit(:name, :profile_img)
     end
 
     def render_unprocessable_entity_response(exception) 

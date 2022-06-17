@@ -703,7 +703,8 @@ input[type="date"]:focus:before {
 .profile-img{
   margin-left: auto;
   position: relative;
+  bottom: 10px;
   border-radius: 100%;
-  width: 3rem;
-  height: 3rem; 
+  width: 4rem;
+  height: 4rem; 
 }
