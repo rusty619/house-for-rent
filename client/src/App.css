@@ -10,11 +10,9 @@ a:-webkit-any-link{
 .home-container{
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 20px;
-  margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 30px;
@@ -709,4 +707,107 @@ input[type="date"]:focus:before {
   width: 4rem;
   height: 4rem; 
   z-index: -1;
+}
+
+.filter-home-type{
+  display: flex;
+  text-align: left;
+  /* border: 2px solid black; */
+  margin-left: 210px;
+  margin-right: 110px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #886F6F;
+  height: 100px;
+}
+
+.filter-home-type-all{
+  cursor: pointer;
+  margin: 40px;
+}
+
+.fa-earth-americas{
+  margin-left: 3px;
+}
+
+.filter-home-type-all:hover{
+  color: black;
+}
+
+.filter-home-type-lakefront{
+  cursor: pointer;
+  margin: 40px;
+}
+
+.fa-house-flood-water{
+  margin-left: 20px;
+}
+
+.filter-home-type-lakefront:hover{
+  color: black;
+}
+
+.filter-home-type-beach{
+  cursor: pointer;
+  margin: 40px;
+}
+
+.fa-umbrella-beach{
+  margin-left: 10px;
+}
+
+.filter-home-type-beach:hover {
+  color: black;
+}
+
+.filter-home-type-cabins{
+  cursor: pointer;
+  margin: 40px;
+}
+
+.fa-house{
+  margin-left: 11px;
+}
+
+.filter-home-type-cabins:hover {
+  color: black;
+}
+
+.filter-home-type-islands{
+  cursor: pointer;
+  margin: 40px;
+}
+
+.fa-map{
+  margin-left: 14px;
+}
+
+.filter-home-type-islands:hover {
+  color: black;
+}
+
+.filer-home-type-camping{
+  cursor: pointer;
+  margin: 40px;
+}
+
+.fa-campground{
+  margin-left: 20px;
+}
+
+.filer-home-type-camping:hover {
+  color: black;
+}
+
+.filter-home-type-treehouse{
+  cursor: pointer;
+  margin: 40px;
+}
+
+.fa-tree{
+  margin-left: 25px;
+}
+
+.filter-home-type-treehouse:hover {
+  color: black;
 }

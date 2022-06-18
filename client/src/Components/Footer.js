@@ -5,7 +5,7 @@ const Footer = () => {
     return(
     <div className="footer">
         <div className="footer-left">
-            <p className='footer-left-copyright'>© 2022 Airbnb, Inc.</p>
+            <p className='footer-left-copyright'>© 2022 BlueCover, Inc.</p>
             <p className="footer-left-text">Privacy</p>
             <p className="footer-left-text">Terms</p>
             <p className="footer-left-text">Sitemap</p>
