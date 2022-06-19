@@ -720,25 +720,38 @@ input[type="date"]:focus:before {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   color: #886F6F;
-  height: 100px;
+  height: 30%;
 }
 
 .filter-home-type-all{
-  cursor: pointer;
   margin: 20px;
+  width: 1.6%;
 }
+
 
 .fa-earth-americas{
   margin-left: 3px;
 }
 
 .filter-home-type-all:hover{
+  cursor: pointer;
   color: black;
 }
 
-.filter-home-type-lakefront{
-  cursor: pointer;
+.filter-home-type-all-active{
   margin: 20px;
+  color: #0000FE;
+  border-bottom: 1px solid #0000FE;
+  width: 1.6%;
+}
+
+/* .filter-home-type-all-active:hover{
+  
+} */
+
+.filter-home-type-lakefront{
+  margin: 20px;
+  width: 5.8%;
 }
 
 .fa-house-flood-water{
@@ -746,12 +759,20 @@ input[type="date"]:focus:before {
 }
 
 .filter-home-type-lakefront:hover{
+  cursor: pointer;
   color: black;
 }
 
-.filter-home-type-beach{
-  cursor: pointer;
+.filter-home-type-lakefront-active{
   margin: 20px;
+  color: #0000FE;
+  border-bottom: 1px solid #0000FE;
+  width: 5.8%;
+}
+
+.filter-home-type-beach{
+  margin: 20px;
+  width: 4%;
 }
 
 .fa-umbrella-beach{
@@ -759,12 +780,20 @@ input[type="date"]:focus:before {
 }
 
 .filter-home-type-beach:hover {
+  cursor: pointer;
   color: black;
 }
 
-.filter-home-type-cabins{
-  cursor: pointer;
+.filter-home-type-beach-active{
   margin: 20px;
+  color: #0000FE;
+  border-bottom: 1px solid #0000FE;
+  width: 4%;
+}
+
+.filter-home-type-cabins{
+  margin: 20px;
+  width: 4%;
 }
 
 .fa-house{
@@ -772,11 +801,18 @@ input[type="date"]:focus:before {
 }
 
 .filter-home-type-cabins:hover {
+  cursor: pointer;
   color: black;
 }
 
+.filter-home-type-cabins-active{
+  margin: 20px;
+  color: #0000FE;
+  border-bottom: 1px solid #0000FE;
+  width: 4%;
+}
+
 .filter-home-type-islands{
-  cursor: pointer;
   margin: 20px;
 }
 
@@ -785,7 +821,14 @@ input[type="date"]:focus:before {
 }
 
 .filter-home-type-islands:hover {
+  cursor: pointer;
   color: black;
+}
+
+.filter-home-type-islands-active{
+  margin: 20px;
+  color: #0000FE;
+  border-bottom: 1px solid #0000FE;
 }
 
 .filer-home-type-camping{
@@ -798,7 +841,14 @@ input[type="date"]:focus:before {
 }
 
 .filer-home-type-camping:hover {
+  cursor: pointer;
   color: black;
+}
+
+.filer-home-type-camping-active{
+    margin: 20px;
+    color: #0000FE;
+    border-bottom: 1px solid #0000FE;
 }
 
 .filter-home-type-treehouse{
@@ -811,5 +861,12 @@ input[type="date"]:focus:before {
 }
 
 .filter-home-type-treehouse:hover {
+  cursor: pointer;
   color: black;
+}
+
+.filter-home-type-treehouse-active{
+  margin: 20px;
+  color: #0000FE;
+  border-bottom: 1px solid #0000FE;
 }
