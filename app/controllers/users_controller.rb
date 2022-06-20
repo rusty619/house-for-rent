@@ -5,28 +5,57 @@ class UsersController < ApplicationController
     def index 
         users = User.all 
         render json: users
+        # @users = User.all 
+        # if @user 
+        #     render json: {
+        #         users: @users
+        #     }
+        # else
+        #     render json: {
+        #         status: 500,
+        #         errors: ['no users found']
+        #     }
+        # end
     end
 
     def show 
         user = User.find(params[:id])
         render json: user
+
+        # @user = User.new(user_require_params)
+        # if @user.save 
+        #     login! 
+        #     render json: {
+        #         status: :created, 
+        #         user: @user
+        #     }
+        # else
+        #     render json: {
+        #         status: 500,
+        #         errors: @user.errors.full_messages
+        #     }
+        # end
     end
 
-    def create 
-        user = User.create!(user_params)
-        render json: user, status: :created
-    end
+    # def create 
+    #     user = User.create!(user_params)
+    #     render json: user, status: :created
+    # end
 
-    def destroy 
-        user = User.find(params[:id])
-        user.destroy
-        head :no_content
-    end
+    # def destroy 
+    #     user = User.find(params[:id])
+    #     user.destroy
+    #     head :no_content
+    # end
 
     private 
 
     def user_params 
-        params.permit(:name, :profile_img)
+        params.permit(:name, :profile_img, :password, :password_confirmation)
+    end
+
+    def user_require_params
+        params.require(:user).permit(:name, :profile_img,:username, :password, :password_confirmation)
     end
 
     def render_unprocessable_entity_response(exception) 
