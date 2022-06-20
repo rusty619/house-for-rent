@@ -10,7 +10,8 @@ const Navbar = () => {
                <span className="nav-fake-business">BlueCover</span>
             </div>
         </NavLink>
-        
+        <NavLink to="'/login">Log IN</NavLink>
+        <Navlink to='/signup'>Sign Up</Navlink>
     </div>)
 }
 

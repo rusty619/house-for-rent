@@ -12,7 +12,7 @@ function App(){
    const [isLoggedIn,setLoggedIn] = useState(false)
    const [user, setUser] = useState({})
 
-   const loginStatus = () => {
+   loginStatus = () => {
     axios.get('http://localhost:3001/logged_in',
     {withCredentials: true})
     .then(res => {
