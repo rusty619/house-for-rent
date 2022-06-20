@@ -628,7 +628,7 @@ input[type="date"]:focus:before {
 .footer{
   border-top: 2px solid #D0C9C0;
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   background-color: #D0C9C0;
   font-family: inherit !important;
 }
