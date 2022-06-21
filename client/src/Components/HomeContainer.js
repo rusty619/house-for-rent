@@ -1,15 +1,23 @@
 import HomeCard from "./HomeCard"
 import React from 'react'
+import ReactLoading from 'react-loading'
 
-function HomeContainer({homeData}){
+function HomeContainer({homeData, loading}){
     return(
     <div className="home-container">
-        {
-            homeData.map((home) => {
+        {!loading ? (
+          <ReactLoading
+          type={"spinningBubbles"}
+          color={"#0000FE"}
+          height={'50%'}
+          width={'50%'}
+          className="now-loading"
+          />) : homeData.map((home) => {
                 return(
                     <HomeCard key={home.id} home={home}/>
                 )
             })
+          
         }
     </div>)
 }
