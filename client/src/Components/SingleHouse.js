@@ -62,7 +62,7 @@ const SingleHouse = () => {
           type={"spinningBubbles"}
           color={"#0000FE"}
           height={'20%'}
-          width={'20%'}
+          width={'15%'}
           className="now-loading"
           />) : (
         <div>

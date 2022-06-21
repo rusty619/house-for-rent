@@ -22,7 +22,6 @@ const Home = () => {
     },1000)
   },[])
 
- 
     const filteredHouse = homeData.filter((home) => {
       if(category === 'all')return oldHomeData
       else return home.home_type.toLowerCase().includes(category.toLowerCase())
