@@ -10,6 +10,13 @@ const Navbar = () => {
                <span className="nav-fake-business">BlueCover</span>
             </div>
         </NavLink>
+        <NavLink to="/user/bigpoppapump">
+            <div className= "nav-user-scott">
+                <p className="nav-user-scot-text-1">Holla </p>
+                <p className="nav-user-scot-text-2">BigPoppaPump</p>
+                <img className="nav-user-scot-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Scottsteiner_full.jpg/256px-Scottsteiner_full.jpg" />
+            </div>
+        </NavLink>
         
     </div>)
 }

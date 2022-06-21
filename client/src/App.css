@@ -54,8 +54,10 @@ a:-webkit-any-link{
 }
 
 .nav-menu{
+  display: flex;
   margin-left: 10px;
   text-align: left;
+  margin-bottom: 25px;
 }
 
 .nav-home{
@@ -115,7 +117,7 @@ a:-webkit-any-link{
 }
 
 .entire-house{
-  margin-top: 20px;
+  margin-top: 45px;
   margin-left: 300px;
   font-family: 'Charis SIL', serif;
   /*margin-right: 1000px; */
@@ -874,4 +876,58 @@ input[type="date"]:focus:before {
 .now-loading{
   text-align: center;
   margin-left: 510px;
+}
+
+.nav-user-scott{
+  display: flex;
+  
+}
+
+.nav-user-scot-text-1{
+  margin-left: 20px;
+  padding: 10px;
+  position: absolute;
+  right: 640px;
+  top: -30px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav-user-scot-text-2{
+  margin-left: 20px;
+  padding: 10px;
+  position: absolute;
+  right: 400px;
+  top: -30px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav-user-scot-img{
+  position: absolute;
+  right: 300px;
+  top: 2px;
+  width: 4.8rem;
+  height: 4.8rem;
+  z-index: -1;
+  border-radius: 100%;
+}
+
+/* .scott{} */
+
+.scott-title-div{
+  display: flex;
+  font-size: 40px;
+  margin-left: 100px;
+}
+
+.scott-title{
+  font-family: 'Stoke', serif;
+  color: #890F0D;
+  display: flex;
+}
+
+.holla-if-you-hear-me{
+  width: 10rem;
+  height: 1fr;
 }

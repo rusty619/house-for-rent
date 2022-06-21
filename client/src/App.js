@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import SingleHouse from "./Components/SingleHouse";
 import Footer from "./Components/Footer";
+import Scott from "./Components/Scott";
 import './App.css';
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/home/:id" exact>
           <SingleHouse />
+        </Route>
+        <Route path="/user/bigpoppapump" exact>
+          <Scott />
         </Route>
       </Switch>
       <Footer />

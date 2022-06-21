@@ -16,15 +16,33 @@ const ReserveBox = ({homeData}) => {
         dayjs(value).format('MM/DD/YYYY')
     }
 
-    const handleReserveBtn = () => {
-        alert(`Thank you for booking from ${checkIn} to ${checkOut} for $${((totalPrice) * 0.375) + totalPrice}`)
+    const handleReserveBtn = (event) => {
+        alert(`Thank you for booking from ${checkIn} to ${checkOut} for $${((totalPrice) * 3) + totalPrice}`)
+        event.preventDefault()
+        // console.log(dayjs('2022-06-15').format('MM/DD/YYYY'))
+        console.log("Date to check in,",checkIn)
+        console.log("Date to check out,",checkOut)
+        console.log("Total price is $", totalPrice)
+        fetch('http://localhost:3000/reservations', {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json",
+            },
+            body: JSON.stringify({
+                "user_id":5,
+                "home_id": homeData.id,
+                "start_date": checkIn,
+                "end_date": checkOut,
+                price: totalPrice
+            })
+            
+        })
+        console.log("POST request completed")
     }
 
-    // console.log(dayjs('2022-06-15').format('MM/DD/YYYY'))
-    console.log("Date to check in,",checkIn)
-    console.log("Date to check out,",checkOut)
     return(
     <div className="reserve-border">
+        <form onsubmit={handleReserveBtn}>
         <div className="reserve-box">
             <div className='reserve-box-price'>Price: ${homeData.price}</div>
             <div className='reserve-box-date'>
@@ -32,7 +50,7 @@ const ReserveBox = ({homeData}) => {
                 {changeDateFormat(checkIn)}
                 <input type="date" placeholder="CHECK-OUT" className='reserve-box-date-checkout' onChange={(event) => { setCheckOut(dayjs(event.target.value).format('MM/DD/YYYY'))}}/>
             </div>
-            <button className="reserve-box-btn" onClick={handleReserveBtn}>Reserve</button>
+            <button type="submit" className="reserve-box-btn" onClick={handleReserveBtn}>Reserve</button>
             <div className="reserve-box-display-prices">
                 <div className="reserve-box-display-prices-row">
                      <div className="reserve-box-display-prices-left">
@@ -68,6 +86,7 @@ const ReserveBox = ({homeData}) => {
                  </div>
             </div>
         </div>
+        </form>
     </div>)
 }
 
