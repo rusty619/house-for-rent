@@ -931,3 +931,21 @@ input[type="date"]:focus:before {
   width: 10rem;
   height: 1fr;
 }
+
+/* .scott-welcome{
+
+} */
+
+.scott-welcome-img{
+  border-radius: 100%;
+}
+
+.scott-welcome-name{
+  margin: 60px;
+  font-family: 'Stoke', serif;
+  font-size: 25px;
+}
+
+/* .scott-booked{} */
+
+/* .reservation{} */

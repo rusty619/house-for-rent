@@ -23,7 +23,7 @@ const ReserveBox = ({homeData}) => {
         console.log("Date to check in,",checkIn)
         console.log("Date to check out,",checkOut)
         console.log("Total price is $", totalPrice)
-        fetch('http://localhost:3000/reservations', {
+        fetch('/reservations', {
             method: "POST",
             headers: {
                 "Content-Type" : "application/json",
