@@ -946,6 +946,49 @@ input[type="date"]:focus:before {
   font-size: 25px;
 }
 
-/* .scott-booked{} */
+.scott-booked{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 1rem;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
 
-/* .reservation{} */
+.reservation{
+  border: 1px solid #694E4E;
+  border-radius: 5%;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30PX;
+}
+
+.reservation-img{
+  /* border: 1px groove #886F6F; */
+  border-radius: 30%;
+  width: 80%;
+  height: 20rem;
+  margin-top: 60px;
+}
+
+.reservation-text{
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 20PX;
+  font-family: 'Stoke', serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.scott-h3{
+  text-align: left;
+  margin-left: 70px;
+  font-family: 'Stoke', serif;
+  font-size: 30px;
+}

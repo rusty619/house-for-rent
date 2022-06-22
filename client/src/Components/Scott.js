@@ -47,8 +47,8 @@ const Scott = () => {
                     <img className="scott-welcome-img" src="https://thumbs.gfycat.com/ActiveAnnualDobermanpinscher-size_restricted.gif"/>
                     <h3 className="scott-welcome-name">Welcome {homeData.name}</h3>
                 </div>
+                <h3 className="scott-h3">Houses you booked</h3>
                 <div className="scott-booked">
-                    <h3>Houses you booked</h3>
                     {homeData.reservations && homeData.reservations.map((reservation) => {
                         return(<Reservation reservation={reservation}/>)
                     })
